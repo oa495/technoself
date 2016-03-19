@@ -1,6 +1,4 @@
 # technoself
 
-How consistent are you online?
+How consistent are you online? How does your real self compare to your instagram self?
 
-This program (will) go through all your social media channels and for each, get a glimpse of how you represent yourself. It would then 
-compare the results for each and rate you on your consistency or your number of technoselves.
