@@ -4,16 +4,32 @@
 	<link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
 </head>
 <body>
-	<section class="main-content">
-	    <p>
-	        <input type="file" id="take-picture" accept="image/*">
-	    </p>
-	    <h2>Preview:</h2>
-	    <p>
-	        <img src="about:blank" alt="" id="show-picture">
-	    </p>
-	    <p id="error"></p>
-	</section>
+	<div class="container">
+		<section class="step1">
+		    <p>
+		        <input type="file" id="take-picture" accept="image/*">
+		    </p>
+		    <p>Upload picture </p>
+		    <video id="video" width="640" height="480" autoplay></video>
+		    <button id="snap">Snap Photo</button>
+			<canvas id="canvas" width="640" height="480"></canvas>
+		    <h2>Preview:</h2>
+		    <p>
+		        <img src="about:blank" alt="" id="show-picture">
+		    </p>
+		    <p id="error"></p>
+		    <img width="20px" src="img/arrow-r.svg"/>
+		</section>
+		<section class="step2">
+			<img width="20px" src="img/arrow-l.svg"/>
+			Username: <input type="text" name="instaUsername"/>
+			<button id="getInsta">Get Instagram Pic </button>
+			<img width="20px" src="img/arrow-r.svg"/>
+		</section>
+		<section class="step3">
+			<img width="20px" src="img/arrow-l.svg"/>
+		</section>
+	</div>
 	<script src="js/base.js"></script>
 </body>
 </html>
