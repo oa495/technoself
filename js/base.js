@@ -11,14 +11,17 @@
             if (files && files.length > 0) {
                 file = files[0];
                 try {
+                    // Get window.URL object
+                    var URL = window.URL || window.webkitURL;
+
                     // Create ObjectURL
-                    var imgURL = window.URL.createObjectURL(file);
+                    var imgURL = URL.createObjectURL(file);
 
                     // Set img src to ObjectURL
                     showPicture.src = imgURL;
 
                     // Revoke ObjectURL
-                    URL.revokeObjectURL(imgURL);
+                    //URL.revokeObjectURL(imgURL);
                 }
                 catch (e) {
                     try {
@@ -30,7 +33,7 @@
                         fileReader.readAsDataURL(file);
                     }
                     catch (e) {
-                        //
+                        // Display error message
                         var error = document.querySelector("#error");
                         if (error) {
                             error.innerHTML = "Neither createObjectURL or FileReader are supported";
