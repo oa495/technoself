@@ -1,6 +1,43 @@
-section {
+$heading-font: "Pathway Gothic One", "Helvetica", sans-serif;
+$body-font: "Lato", sans-serif;
 
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: $body-font;
+	width: 100%;
+	height: 100%;
+}
+h1, h2, h3 {
+	font-family: $heading-font;
+	margin: 10px;
+	padding: 10px;
+}
+section {
+	max-width: 95%;
+	margin: auto;
+}
+video, canvas {
+	width: 45%;
+	padding: 20px;
 }
 .step2, .step3 {
   display: none;
+}
+.right-arrow, .left-arrow {
+	position: absolute;
+	bottom: 40px;
+}
+.right-arrow {
+	right: 2%;
+}
+.left-arrow {
+	left: 2%;
+}
+button {
+	position: absolute;
 }

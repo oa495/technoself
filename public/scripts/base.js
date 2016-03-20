@@ -47,7 +47,7 @@
 
 window.addEventListener("DOMContentLoaded", function() {
     // Grab elements, create settings, etc.
-    var canvas = document.getElementById("canvas"),
+    var canvas = document.getElementsByClassName("canvas")[0],
         context = canvas.getContext("2d"),
         video = document.getElementById("video"),
         videoObj = { "video": true },
@@ -75,7 +75,10 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
     document.getElementById("snap").addEventListener("click", function() {
-        context.drawImage(video, 0, 0, 640, 480);
+        context.drawImage(video, 0, 0, 640, 640);
+        var canvas2 = document.getElementsByClassName("canvas")[1];
+        context2 = canvas2.getContext("2d");
+        context2.drawImage(video, 0, 0, 640, 640);
     });
 
 }, false);
