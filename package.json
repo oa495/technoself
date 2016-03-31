@@ -1,7 +1,7 @@
 {
-  "name": "flatline",
+  "name": "technoself",
   "version": "1.0.0",
-  "description": "Visualisation of your social media presence",
+  "description": "who are you online?",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.14.1",
